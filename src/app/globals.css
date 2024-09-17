@@ -1,0 +1,62 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+.calculator {
+  width: 250px;
+  padding: 10px 20px;
+}
+
+.calculator__display{
+  padding-inline: 8px;
+}
+.calculator__display h2{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+h2.result {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.calculator__buttons .calc_action_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.calculator__buttons{
+  display: flex;
+}
+
+
+.calculator__buttons .calc_num_buttons button,
+.calculator__buttons .calc_action_buttons button {
+    width: 45px;
+    height: 45px;
+    margin: 7px;
+}
